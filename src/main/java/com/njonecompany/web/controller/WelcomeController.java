@@ -19,7 +19,8 @@ public class WelcomeController {
 
         model.addAttribute("msg", getMessage());
         model.addAttribute("today", new Date());
-        System.out.println(model.getAttribute("today"));
+        //System.out.println(model.getAttribute("today"));
+        logger.info((String) model.getAttribute("today"));
         return "index";
 
     }
